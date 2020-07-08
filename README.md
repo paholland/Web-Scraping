@@ -1,12 +1,12 @@
-# Web Scraping Homework - Mission to Mars
+# Web Scraping - Mission to Mars
 
 ![mission_to_mars](Images/mission_to_mars.png)
 
-In this assignment, you will build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what you need to do.
+Build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what you need to do.
 
 ### Before You Begin
 
-1. Create a new repository for this project called `web-scraping-challenge`. **Do not add this homework to an existing repository**.
+1. Create a new repository for this project called `web-scraping-challenge`. 
 
 2. Clone the new repository to your computer.
 
@@ -105,17 +105,6 @@ Use MongoDB with Flask templating to create a new HTML page that displays all of
 ![final_app_part1.png](Images/final_app_part1.png)
 ![final_app_part2.png](Images/final_app_part2.png)
 
-- - -
-
-## Step 3 - Submission
-
-To submit your work to BootCampSpot, create a new GitHub repository and upload the following:
-
-1. The Jupyter Notebook containing the scraping code used.
-
-2. Screenshots of your final application.
-
-3. Submit the link to your new repository to BootCampSpot.
 
 ## Hints
 
