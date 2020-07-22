@@ -1,4 +1,4 @@
-## Web Scraping - Mission to Mars
+## Web Scraping Project (Mission to Mars)
 
 Build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page.
 
@@ -8,7 +8,7 @@ Flask App (has routes for loading the webpage and scraping the content, connect/
 
 Web (landing page loads even before scraping; index.html includes a button to the scrape route; uses jinja to load data from the variable passed by flask; uses bootstrap to style the webpage; facts talve renders correctly
 
-### Tools used: 
+#### Tools used: 
 initial scraping (Jupyter Notebook, BeautifulSoup, Pandas, Splinter)
 creating the web page and database (Python, HTML, JavaScript, Flask, MongoDB).
 
