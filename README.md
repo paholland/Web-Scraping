@@ -1,6 +1,6 @@
 ## Web Scraping Project (Mission to Mars)
 
-        Build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page.
+       Build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page.
 
 Web Scraping in Jupyter Notebook (scrapes the most recent NASA news; scrapes the URL for the featured image, the latest weather from twitter, four hemisphere umage urls, the Mars facts HTML table)
 
