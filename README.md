@@ -1,6 +1,5 @@
 # Web Scraping - Mission to Mars
 
-### Objective: 
 Build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page
 
 Web Scraping in Jupyter Notebook (scrapes the most recent NASA news, scrapes the URL for the featured image, the latest weather from twitter, scrapes all 4 hemisphere umage urls, the Mars facts HTML table)
