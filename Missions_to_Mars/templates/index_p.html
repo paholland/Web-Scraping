@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<div class ="container1">
+    <div class ="jumbotrom text-center" style = background-color:lightgray>
+        <br>
+        <h2 style = "text-align: center; color:black"><strong>Mission to Mars</strong></h2>
+        <p style = "text-align: center;"></p>
+        <!-- <a  href= "/scrape" class="button" class = "btn btn-primary btn-lg" style = "background-color:rgb(145, 138, 138); color: wheat"</a> -->
+        <!-- <a href="/scrape" class="button">Scrape Mars Data</a>  -->
+        <a href="/scrape" class="button" style="background-color: antiquewhite; padding: 10px; border-radius: 10px">Scrape Mars Data</a> 
+      </div>
+     
+
+    <div class ="container2" style ="background-color: rgb(145, 138, 138)">
+        <div class = "row">
+
+            <div class = "col-md-12">
+                <div class= "main_cont">
+                <h3 style ="color:wheat"><strong> Latest Mars News</strong></h3>
+                <ul>
+                  <li>{{mars['title']}}</li>
+                  <li>{{mars['news_p']}}</li>
+              </ul>
+                <!-- <h5><strong>NASA's Next Mars Mission to Investigate Interior of Red Planet</strong></h5> -->
+                <!-- <p>Preparation of NASA's next spacecraft to Mars, InSight, has ramped up this summer, on course for launch next May from Vandenberg Air Force base in central California -- the first interplanetary launch in history from America's West Coast</p> -->
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-fluid" style = "background-color: white;">
+        <div class = "row">
+            <div class = "col-md-8">
+                <h3 style ="color:black"><strong> Featured Mars Image</strong></h3>
+                <img src="{{mars.featured_image_url| default('static/images/error.png', true)}}" class="img-responsive"
+                alt="">
+                
+                <!-- <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA16682_hires.jpg" class="img-thumbnail" -->
+            </div>
+            
+            <div class = "col-md-8">
+                <!-- <div class = "row"> -->
+                    <div class = "col-md-12" style = "border-style: solid;border-color: wheat; border: width 0.5px;">
+                    <h4 style = "color:black"><strong>Current Weather on Mars</strong></h4>
+                    <p>{{mars["weather"]}}</p>
+                    <!-- <p style = "text-align: justify">InSight sol 579 (2020-07-13) low -88.5ºC (-127.4ºF) high -3.7ºC (25.4ºF)\nwinds from the WNW at 5.0 m/s (11.2 mph) gusting to 14.8 m/s (33.1 mph)\npressure at 7.80 hPa</p> -->
+                    </div>
+                    </div>
+                    <!-- <div class = "col-md-12" -->
+
+            <div class = "col-md-12"> 
+            
+                    <!-- <div class = "col-md-4"> -->
+
+                        <h4 style="color:black"><strong>Mars Facts</strong></h4>
+                        <p>{{mars.facts | safe}}</p>
+                        <!-- <table border="2"class="dataframe>                          
+
+                            <thead>
+                              <tr style="text-align: right;">
+                                <th></th>
+                                <th>value</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Equatorial Diameter:</td>
+                                <td>6,792 km</td>
+                              </tr>
+                              <tr>
+                                <td>Polar Diameter:</td>
+                                <td>6,752 km</td>
+                              </tr>
+                              <tr>
+                                <td>Mass:</td>
+                                <td>6.39 � 10^23 kg (0.11 Earths)</td>
+                              </tr>
+                              <tr>
+                                <td>Moons:</td>
+                                <td>2 (Phobos &amp; Deimos)</td>
+                              </tr>
+                              <tr>
+                                <td>Orbit Distance:</td>
+                                <td>227,943,824 km (1.38 AU)</td>
+                              </tr>
+                              <tr>
+                                <td>Orbit Period:</td>
+                                <td>687 days (1.9 years)</td>
+                              </tr>
+                              <tr>
+                                <td>Surface Temperature:</td>
+                                <td>-87 to -5 �C</td>
+                              </tr>
+                              <tr>
+                                <td>First Record:</td>
+                                <td>2nd millennium BC</td>
+                              </tr>
+                              <tr>
+                                <td>Recorded By:</td>
+                                <td>Egyptian astronomers</td>
+                              </tr>
+                            </tbody>
+                          </table> -->
+
+                        </div>
+                    </div>
+                 </div>
+            </div> 
+            <br> 
+            <div class="container-fluid text-center" style="border: 8px solid color rgb(145, 138, 138);background-color: rgb(145, 138, 138)">
+                <div calss="row">
+                    <div class= "col-md-12">
+
+                        <br>
+                        <h3 style="color:wheat"><strong>Mars Hemispheres</strong></h3>
+                        <br>
+                        
+                    </div>   
+                </div>
+            
+                <div class = "row" style="margin:auto;">
+                
+                    <div class="col-md-6">
+                       
+
+                        <img src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg" class="img-thumbnail"> 
+                        <p>{{dict['Mars_Hemispheres']}}</p> 
+                        <h4 style="color:rgb(248, 244, 244)"><strong>Valles Marineris Hemisphere Enhanced</strong></h4>
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <img src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/cerberus_enhanced.tif/full.jpg" class="img-thumbnail">
+                        <p>{{dict['Mars_Hemispheres']}}</p> 
+                        <h4 style="color:rgb(248, 244, 244)"><strong>Cerberus Hemisphere Enhanced</strong></h4>
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <img src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/Schiaparelli_enhanced.tif/full.jpg" class="img-thumbnail">
+                        <p>{{dict['Mars_Hemispheres']}}</p> 
+                        <h4 style="color:rgb(250, 248, 248)"><strong>Schiaparelli Hemisphere Enhanced</strong></h4>
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <img src="https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg" class="img-thumbnail">
+                        <p>{{dict['Mars_Hemispheres']}}</p> 
+                        <h4 style="color:rgb(250, 248, 248)"><strong>Syrtis Major Hemisphere Enhanced</strong></h4>
+                    </div>
+
+
+
+                
+                </div> 
+            </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
