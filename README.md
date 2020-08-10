@@ -9,7 +9,7 @@ Flask App (has routes for loading the webpage and scraping the content; connect/
 Web (landing page loads even before scraping; index.html includes a button to the scrape route; load data from the variable passed by flask; uses bootstrap to style the webpage; facts talve renders correctly)
 
 ### initial scraping (Jupyter Notebook, BeautifulSoup, Pandas, Splinter)
-### creating the web page and database (Python, HTML, JavaScript, Flask, MongoDB).
+### creating the web page and database (Python, HTML, CSS, JavaScript, Flask, MongoDB).
 
 
 
